@@ -1,0 +1,140 @@
+/*/* Selecciona todos los elementos de la página */
+* {
+    /* Elimina cualquier espacio de relleno (padding) por defecto de todos los elementos */
+    padding: 0;
+    
+    /* Elimina cualquier margen por defecto de todos los elementos */
+    margin: 0;
+    
+    /* Aplica un modelo de caja en el que el padding y los bordes se incluyen dentro del tamaño total del elemento */
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    /* Establece la fuente del texto en el cuerpo del documento a Arial, 
+       o, si no está disponible, a una fuente sans-serif genérica */
+    font-family: Arial, sans-serif;
+
+    /* Define el ancho del cuerpo del documento para que ocupe el 100% del ancho
+       de la ventana del navegador */
+    width: 100%;
+
+    /* Define la altura del cuerpo del documento para que ocupe el 100% de la 
+       altura de la ventana del navegador, asegurando que cubra toda la pantalla */
+    height: 100vh; /* 'vh' significa 'viewport height', donde 1vh es igual al 1% de la altura de la ventana */
+
+    /* Aplica una imagen de fondo al cuerpo del documento */
+    background-image: url(../img/24.jpg);
+
+    /* Centra la imagen de fondo en el centro del contenedor */
+    background-position: center center;
+
+    /* Ajusta la imagen de fondo para que cubra completamente el área del elemento */
+    background-size: cover;
+
+    /* Evita que la imagen de fondo se repita */
+    background-repeat: no-repeat;
+
+    /* Establece el diseño del cuerpo usando flexbox */
+    display: flex;
+
+    /* Centra horizontalmente los elementos hijos */
+    justify-content: center;
+
+    /* Centra verticalmente los elementos hijos */
+    align-items: center;
+}
+
+/* Estilos para el formulario con la clase "form" */
+.form {
+    /* El ancho del formulario será el 40% del ancho del contenedor padre */
+    width: 40%;
+    
+    /* La altura del formulario será el 40% del contenedor padre */
+    height: 40%;
+    
+    /* Hereda la propiedad display del elemento padre, que podría ser flex, grid, etc. */
+    display: inherit;
+    
+    /* Alinea los elementos hijos verticalmente al centro del formulario */
+    align-items: center;
+    
+    /* Centra los elementos hijos horizontalmente */
+    justify-content: center;
+    
+    /* Los elementos dentro del formulario se organizan en una columna */
+    flex-direction: column;
+    
+    /* El color del texto dentro del formulario será aqua */
+    color: aqua;
+    
+    /* Espacio entre los elementos dentro del formulario de 1.25 rem */
+    gap: 1.25rem;
+    
+    /* Aplica un filtro de desenfoque al fondo detrás del formulario */
+    backdrop-filter: blur(3px);
+}
+
+/* Estilos para cada div dentro del formulario */
+.form div {
+    /* Usa un diseño de flexbox para el div */
+    display: flex;
+    
+    /* Centra horizontalmente el contenido dentro del div */
+    justify-content: center;
+    
+    /* Alinea verticalmente el contenido dentro del div */
+    align-items: center;
+    
+    /* Espacio entre los elementos del div de 1.25 rem */
+    gap: 1.25rem;
+    
+    /* Aplica un borde redondeado al div, con un radio de 50px */
+    border-radius: 50px;
+}
+
+/* Estilos para el label dentro del div */
+.form div label {
+    /* Define el color del texto del label */
+    color: aliceblue;
+    
+    /* Aumenta el espaciado entre letras del label */
+    letter-spacing: 2px;
+
+    /* Establece un ancho de 120px para el label */
+    width: 120px;
+}
+
+/* Estilos para el input dentro del div */
+.form div input {
+    /* Elimina el contorno azul por defecto cuando el input está enfocado */
+    outline: none;
+
+    /* Define la altura del input en 30px */
+    height: 30px;
+
+    /* Aplica un borde redondeado al input, con un radio de 10px */
+    border-radius: 10px;
+}
+
+/* Estilos para el botón dentro del formulario */
+.form button {
+    /* El ancho del botón será el 40% del contenedor padre */
+    width: 40%;
+    
+    /* Añade un margen de 20px alrededor del botón */
+    margin: 20px;
+    
+    /* El color de fondo del botón será blanco */
+    background-color: white;
+    
+    /* La altura del botón será de 35px */
+    height: 35px;
+    
+    /* Elimina el borde predeterminado del botón */
+    border: none;
+    
+    /* Aplica bordes redondeados al botón, con un radio de 10px */
+    border-radius: 10px;
+}
