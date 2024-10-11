@@ -62,7 +62,8 @@ body {
     content: '';
     position: absolute;
     inset: 4px;
-    background-color: rgb(76, 76, 76);
+    /* background-color: rgb(45, 45, 45); */
+    
     border-radius: 15px;
     border: 8px solid black;
     
@@ -165,4 +166,4 @@ input[type="submit"]:hover {
     color: #ff2770;
     font-weight: 600;
 }
-
+/* INICIO */
